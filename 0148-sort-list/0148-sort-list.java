@@ -9,16 +9,16 @@
  * }
  */
 class Solution {
-    private ListNode convert(int[] arr){
-        ListNode head = new ListNode(arr[0]);
-        ListNode temp = head;
-        for(int i=1;i<arr.length;i++){
-            ListNode mover = new ListNode(arr[i]);
-            temp.next = mover;
-            temp = temp.next;
-        }
-        return head;
-    }
+    // private ListNode convert(int[] arr){
+    //     ListNode head = new ListNode(arr[0]);
+    //     ListNode temp = head;
+    //     for(int i=1;i<arr.length;i++){
+    //         ListNode mover = new ListNode(arr[i]);
+    //         temp.next = mover;
+    //         temp = temp.next;
+    //     }
+    //     return head;
+    // }
     private int len(ListNode head){
         ListNode temp = head;
         int cnt =0;
@@ -41,7 +41,14 @@ class Solution {
             temp = temp.next;
         }
         Arrays.sort(arr);
-        ListNode newhead = convert(arr);
-        return newhead;
+        // ListNode newhead = head;
+        temp = head;
+        int i=0;
+        while(temp!=null){
+            temp.val = arr[i];
+            temp = temp.next;
+            i=i+1;
+        }
+        return head;
     }
 }
