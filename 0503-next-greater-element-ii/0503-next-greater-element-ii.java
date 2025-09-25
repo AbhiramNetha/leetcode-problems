@@ -3,9 +3,9 @@ class Solution {
         int[] ans = new int[nums.length];
         for(int i=0;i<nums.length;i++){
             int max =-1;
-            for(int j=1;j<nums.length;j++){
-                if(nums[(i+j)%nums.length]>nums[i]){
-                    max = nums[(i+j)%nums.length];
+            for(int j=i+1;j<=i+nums.length-1;j++){
+                if(nums[(j)%nums.length]>nums[i]){
+                    max = nums[(j)%nums.length];
                     break;     
                 }
             }
