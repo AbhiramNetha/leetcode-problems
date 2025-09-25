@@ -1,28 +1,31 @@
 class Solution {
-    // public int nge(int[] nums2,int val){
-
-    // }
-    
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        // Stack<Integer> st = new Stack<>();
-        // for(int i= )
-        int[] nge = new int[nums1.length];
-        for(int i=0;i<nums1.length;i++){
-            int max =-1;
-            for(int j=0;j<nums2.length;j++){
-                int index = j;
-                if(nums1[i] == nums2[j]){
-                    while(index!=nums2.length){
-                        if(nums2[index] > nums1[i]){
-                            max = nums2[index];
-                            break;
-                        }
-                        index++;
-                    }
+        Stack<Integer> st = new Stack<>();
+        HashMap<Integer,Integer> hm = new HashMap<>();
+        int[] ans = new int[nums1.length];
+        for(int i =nums2.length-1;i>=0;i--){
+            if(st.isEmpty()){
+                hm.put(nums2[i],-1);
+            }
+            else if(nums2[i]<st.peek()){
+                hm.put(nums2[i],st.peek());
+            }
+            else{
+                while(!st.isEmpty() && nums2[i] >= st.peek()){
+                    st.pop();
+                }
+                if(!st.isEmpty()){
+                    hm.put(nums2[i],st.peek());
+                }
+                else{
+                    hm.put(nums2[i],-1);
                 }
             }
-            nge[i] = max;
+            st.push(nums2[i]);
         }
-        return nge;
+        for(int i=0;i<nums1.length;i++){
+            ans[i] = hm.get(nums1[i]);
+        }
+        return ans;
     }
 }
