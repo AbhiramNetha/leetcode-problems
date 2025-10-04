@@ -35,7 +35,7 @@ class Solution {
         for(int i=0;i<n;i++){
             int left = i- psee[i];
             int right = nse[i] - i;
-            total = (total + (left*right*arr[i])%mod)%mod;
+            total = (int)((total + (left*right*1L*arr[i])%mod)%mod);
         }
         return total;
     }
