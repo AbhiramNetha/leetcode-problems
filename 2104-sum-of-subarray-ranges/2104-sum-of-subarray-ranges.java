@@ -54,8 +54,8 @@ class Solution {
     public long subArrayRanges(int[] nums) {
         int n = nums.length;
         int mod = (int)(1e9 + 7);
-        int largest = 0;
-        int smallest = 0;
+        long largest = 0;
+        long smallest = 0;
         int[] pse = findpse(nums);
         int[] nse = findnse(nums);
         int[] pge = findple(nums);
