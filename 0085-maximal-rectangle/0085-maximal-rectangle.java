@@ -26,12 +26,15 @@ class Solution {
         int m = matrix[0].length;
         int n = matrix.length;
         int[][] prefix = new int[n][m];
-        int sum =0;
+        
         for(int j=0;j<m;j++){
+            int sum =0;
             for(int i=0;i<n;i++){
                 int num = Character.getNumericValue(matrix[i][j]);
                 sum+= num;
-                if(matrix[i][j] == '0') sum =0;
+                if(num == 0){
+                    sum =0;
+                }
                 prefix[i][j] = sum;
             }
         }
