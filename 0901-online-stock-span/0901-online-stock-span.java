@@ -1,23 +1,37 @@
+class pair{
+    int frst;
+    int second;
+    pair(int frst,int second){
+        this.frst = frst;
+        this.second = second;
+    }
+}
 class StockSpanner {
 
-    ArrayList<Integer> list = new ArrayList<>();
+    
+    Stack<int[]> st = new Stack<>();
     public StockSpanner() {
-        
     }
     
     public int next(int price) {
-        // ArrayList<Integer> list = new ArrayList<>();
-        list.add(price);
-        int cnt =1;
-        for(int i = list.size()-2;i>=0;i--){
-            if(price >= list.get(i)){
-                cnt++;
-            }
-            else{
-                break;
-            }
+        // list.add(price);
+        // int cnt =1;
+        // for(int i = list.size()-2;i>=0;i--){
+        //     if(price >= list.get(i)){
+        //         cnt++;
+        //     }
+        //     else{
+        //         break;
+        //     }
+        // }
+        // return cnt;
+        int span = 1;
+        while(!st.isEmpty() && st.peek()[0] <= price){
+            span += st.pop()[1];
         }
-        return cnt;
+        // ans = ind - (s.isEmpty()?-1:st.peek().second);
+        st.push(new int[]{price,span});
+        return span;
     }
 }
 
