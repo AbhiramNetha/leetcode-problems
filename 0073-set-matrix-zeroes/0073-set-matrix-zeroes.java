@@ -1,36 +1,21 @@
 class Solution {
-    public void setrows(int i,int[][] matrix){
-        int m = matrix[0].length;
-        int res = Integer.MAX_VALUE;
-        for(int j=0;j<m;j++){
-            if(matrix[i][j] > 0){
-                matrix[i][j] = res;
-            }
-        }
-    }
-    public void setcolumns(int j,int[][] matrix){
-        int n = matrix.length;
-        int res = Integer.MAX_VALUE;
-        for(int i=0;i<n;i++){
-            if(matrix[i][j] >0){
-                matrix[i][j] = res;
-            }
-        }
-    }
+    
     public void setZeroes(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
+        int[] row = new int[n];
+        int[] col = new int[m];
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(matrix[i][j] == 0){
-                    setrows(i,matrix);
-                    setcolumns(j,matrix);
+                    row[i] = 1;
+                    col[j] = 1;
                 }
             }
         }
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                if(matrix[i][j] == Integer.MAX_VALUE){
+                if(row[i] == 1 || col[j] == 1){
                     matrix[i][j] = 0;
                 }
             }
