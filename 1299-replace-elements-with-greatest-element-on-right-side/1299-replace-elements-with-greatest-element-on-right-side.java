@@ -4,11 +4,12 @@ class Solution {
         Stack<Integer> st = new Stack<>();
         int[] ans = new int[n];
         ans[n-1] = -1;
-        int maxi = arr[n-1];
+        st.push(arr[n-1]);
         for(int i=n-2;i>=0;i--){
-            int temp = arr[i];
-            ans[i] = maxi;
-            maxi = Math.max(maxi,temp);
+            ans[i] = st.peek();
+            if(st.peek() < arr[i]){
+                st.push(arr[i]);
+            }
         }
         return ans;
     }
