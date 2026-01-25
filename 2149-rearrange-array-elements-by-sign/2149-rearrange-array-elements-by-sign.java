@@ -16,17 +16,11 @@ class Solution {
                 q++;
             }
         }
-        p=0;
-        q=0;
-        for(int i=0;i<n;i++){
-            if(i%2 == 0){
-                ans[i] = even[p];
-                p++;
-            } 
-            else{
-                ans[i] = odd[q];
-                q++;
-            }
+        int s=0;
+        for(int i=0;i<n;i+=2){
+            ans[i] = even[s];
+            ans[i+1]= odd[s];
+            s++;
         }
         return ans;
     }
