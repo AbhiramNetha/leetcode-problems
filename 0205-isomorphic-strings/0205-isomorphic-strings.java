@@ -12,14 +12,12 @@ class Solution {
                 th.put(ch2,ch1);
             }
             else if(sh.containsKey(ch1) && sh.get(ch1) != ch2){
-                bool = false;
-                break;
+                return false;
             }
             else if(th.containsKey(ch2) && th.get(ch2) != ch1){
-                bool = false;
-                break;
+                return false;
             }
         }
-        return bool;
+        return true;
     }
 }
