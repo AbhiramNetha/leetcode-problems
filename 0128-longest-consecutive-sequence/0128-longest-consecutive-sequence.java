@@ -8,14 +8,14 @@ class Solution {
             hs.add(nums[i]);
         }
         int longest = 1;
-        for(int i=0;i<n;i++){
-            if(!hs.contains(nums[i]-1)){
+        for(int num : hs){
+            if(!hs.contains(num-1)){
                 int cnt =1;
-                int x = nums[i];
-                hs.remove(nums[i]);
-                while(hs.contains(++x)){
+                // hs.remove(nums[i]);
+                while(hs.contains(num+1)){
                     cnt=cnt+1;
-                    hs.remove(x);
+                    // hs.remove(x);
+                    num++;
                 }
                 longest = Math.max(longest,cnt);
             }
