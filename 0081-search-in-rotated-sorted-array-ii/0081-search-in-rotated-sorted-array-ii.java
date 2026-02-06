@@ -7,10 +7,10 @@ class Solution {
             if(nums[mid] == target){
                 return true;
             }
-            while(nums[l] == target && nums[r] == target){
-                mid= (l+r)/2;
+            if(nums[l] == nums[mid] && nums[r] == nums[mid]){
                 l++;
                 r--;
+                continue;
             }
             if(nums[l] <= nums[mid]){
                 if(nums[mid]>=target && nums[l] <=target){
