@@ -1,18 +1,47 @@
 class Solution {
     public int[] findErrorNums(int[] nums) {
         int n  =nums.length;
-        long s=0,s2=0;
-        long sn = (long)n*(n+1)/2;
-        long s2n = (long)n*(n+1)*(2*n+1)/6;
+        int xor = 0;
         for(int i=0;i<n;i++){
-            s+= nums[i];
-            s2+= (long)nums[i] * (long)nums[i];
+            xor^=nums[i];
+            xor^=(i+1);
         }
-        long val1 = s-sn;
-        long val2 = s2 - s2n;
-        val2 = val2/val1;
-        long x = (val1 + val2)/2;
-        long y = val2-x;
-        return new int[]{(int)x,(int)y};
+        int bitno=0;
+        while(true){
+            if((xor&(1<<bitno)) !=0){
+                break;
+            }
+            bitno++;
+        }
+        int zero=0;
+        int one =0;
+        for(int i=0;i<n;i++){
+            if((nums[i] & (1<<bitno)) !=0){
+                one^=nums[i];
+            }
+            else{
+                zero^=nums[i];
+            }
+        }
+        for(int i=1;i<=n;i++){
+            if((i & (1<<bitno)) !=0){
+                one^=i;
+            }
+            else{
+                zero^=i;
+            }
+        }
+        int cnt =0;
+        for(int i=0;i<n;i++){
+            if(nums[i] == zero){
+                cnt++;
+            }
+        }
+        if(cnt == 2){
+            return new int[]{zero,one};
+        }
+        else{
+            return new int[]{one,zero};
+        }
     }
 }
