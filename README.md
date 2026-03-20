@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0119-pascals-triangle-ii](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0229-majority-element-ii](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0229-majority-element-ii/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -28,4 +29,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0424-longest-repeating-character-replacement/) | Medium |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0119-pascals-triangle-ii](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0119-pascals-triangle-ii/) | Easy |
 <!---LeetCode Topics End-->
