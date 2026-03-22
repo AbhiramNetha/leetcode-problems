@@ -1,52 +1,37 @@
 class Solution {
-    public int left(int[] nums,int t){
+    public int lm(int[] arr, int k){
         int l=0;
-        int r = nums.length-1;
+        int r = arr.length-1;
         while(l<=r){
-            int mid = l + (r-l)/2;
-            if(nums[mid]>=t){
-                r = mid-1;
+            int mid = l+(r-l)/2;
+            if(arr[mid]>=k){
+                r=mid-1;
             }
             else{
                 l=mid+1;
             }
         }
-        if(l >= nums.length){
-            return -1;
-        }
-        if(nums[l] != t){
-            return -1;
-        }
-        else{
-            return l;
-        }
+        if(l>=arr.length || (arr[l]!=k)) return -1;
+        return l;
     }
-    public int right(int[] nums,int t){
+    public int rm(int[] arr, int k){
         int l=0;
-        int r = nums.length-1;
+        int r = arr.length-1;
         while(l<=r){
-            int mid = l +(r-l)/2;
-            if(nums[mid]>t){
-                r = mid-1;
+            int mid = l+(r-l)/2;
+            if(arr[mid]>k){
+                r=mid-1;
             }
             else{
                 l=mid+1;
             }
         }
-        if(r<0){
-            return -1;
-        }
-        if(nums[r]!=t){
-            return -1;
-        }
-        else{
-            return r;
-        }
+        if(r<0 || (arr[r] !=k)) return -1;
+        return r;
     }
     public int[] searchRange(int[] nums, int target) {
-        int lm = left(nums,target);
-        int rm = right(nums,target);
-        int ans[] = {lm,rm};
-        return ans;
+        int left = lm(nums,target);
+        int right = rm(nums,target);
+        return new int[]{left,right};
     }
 }
