@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0035-search-insert-position/) | Easy |
 | [0119-pascals-triangle-ii](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0229-majority-element-ii](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0229-majority-element-ii/) | Medium |
@@ -38,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0034-find-first-and-last-position-of-element-in-sorted-array/) | Medium |
 | [0035-search-insert-position](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0035-search-insert-position/) | Easy |
 | [0704-binary-search](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0704-binary-search/) | Easy |
 <!---LeetCode Topics End-->
