@@ -6,6 +6,10 @@ class Solution {
         int ans =Integer.MAX_VALUE;
         while(l<=r){
             int mid = l+(r-l)/2;
+            if(nums[l] <= nums[r]){
+                ans = Math.min(ans,nums[l]);
+                break;
+            }
             if(nums[l] <= nums[mid]){
                 ans = Math.min(ans,nums[l]);
                 l=mid+1;
