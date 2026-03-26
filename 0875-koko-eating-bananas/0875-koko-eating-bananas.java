@@ -3,7 +3,10 @@ class Solution {
         int n = arr.length;
         int ans =0;
         for(int i=0;i<n;i++){
-            ans += (arr[i] +k-1)/k;
+            ans += (arr[i])/k;
+            if(arr[i] % k != 0){
+                ans++;
+            }
         }
         if(ans <= h) return true;
         return false; 
