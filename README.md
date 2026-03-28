@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0540-single-element-in-a-sorted-array](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0875-koko-eating-bananas/) | Medium |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -53,5 +54,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0540-single-element-in-a-sorted-array](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0875-koko-eating-bananas/) | Medium |
+| [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 <!---LeetCode Topics End-->
