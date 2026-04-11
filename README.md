@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0151-reverse-words-in-a-string](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -60,4 +61,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1283-find-the-smallest-divisor-given-a-threshold/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/AbhiramNetha/leetcode-problems/tree/main/1539-kth-missing-positive-number/) | Easy |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0151-reverse-words-in-a-string](https://github.com/AbhiramNetha/leetcode-problems/tree/main/0151-reverse-words-in-a-string/) | Medium |
 <!---LeetCode Topics End-->
